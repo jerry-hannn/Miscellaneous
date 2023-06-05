@@ -63,10 +63,10 @@ while True:
     #     state = next_state
     # if (state == 2) and (button.value == 0 and old_button == 1):
     #     state = next_state
-    if (top_button.value == 0 and old_top == 1):
+    if (top_button.value == 1 and old_top == 0):
         state = next_state
         next_state = 2
-    if (bottom_button.value == 0 and old_bottom == 1):
+    if (bottom_button.value == 1 and old_bottom == 0):
         state = next_state
         next_state = 1
     if ((top_button.value == 0 and old_top == 1) or (bottom_button.value == 0 and old_bottom == 1)) and (button.value == 0 and old_button == 1):
